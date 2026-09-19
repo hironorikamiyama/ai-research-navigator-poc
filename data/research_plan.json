@@ -1,0 +1,29 @@
+{
+  "research_questions": [
+    {
+      "question": "Python向けの公式SDK（google-genai SDKや従来のgoogle-generativeaiなど）のうち、現在Googleが公式に推奨する標準SDKはどれか、また非推奨（Deprecation）スケジュールはどうなっているか。",
+      "why": "旧レイアウトや非推奨予定のSDKを新規採用するリスクを回避し、将来的な保守性と最新機能への追従性を確保するため。",
+      "preferred_primary_source": "Google AI Studio 公式ドキュメント（Python Quickstart）、および公式GitHubリポジトリ（google-genai / google-generativeai）のREADME・リリースノート"
+    },
+    {
+      "question": "利用プラットフォームとして「Google AI Studio（Gemini API）」と「Google Cloud Vertex AI」のどちらを選択すべきか、また統一SDKにおける両者の切り替え・対応状況はどうなっているか。",
+      "why": "認証方式、データプライバシー（学習利用の有無）、SLA、エンタープライズ機能（VPC等）の要件に応じて適切な基盤を選定するため。",
+      "preferred_primary_source": "Google Cloud Vertex AI ドキュメント、および Google AI Dev Portal の「Gemini API vs Vertex AI」比較ドキュメント"
+    },
+    {
+      "question": "現在利用可能なGeminiモデル（Gemini 1.5, 2.0等）の推奨バージョンおよび、非推奨化・提供終了（EOL）予定のモデル一覧は何か。",
+      "why": "すでに停止予定のモデル選定を避け、ユースケース（処理速度、コスト、コンテキストウィンドウ長、推論性能など）に応じた最適なモデルバージョン（Stable/Latest）を選択するため。",
+      "preferred_primary_source": "Google AI Studio / Vertex AI 公式ドキュメントの「Gemini models」および「Model deprecation timeline」"
+    },
+    {
+      "question": "選択するSDKおよびプラットフォームにおいて、APIキーまたはGoogle Cloud（ADC / サービスアカウント）による認証・認可の推奨手順は何か。",
+      "why": "本番環境および開発環境におけるセキュリティ要件やアクセス制御の規約に則った認証実装を行うため。",
+      "preferred_primary_source": "Google Cloud Authentication ガイド、および Google GenAI SDK の認証ドキュメント"
+    },
+    {
+      "question": "構造化出力（Structured Outputs）、Function Calling、マルチモーダル入力、ストリーミング処理などの主要機能に関して、SDKやモデル間での対応状況や実装上の制約はあるか。",
+      "why": "開発予定のアプリケーションに必要な機能要件を、選択したモデルとSDKの組み合わせで実現可能か事前に検証するため。",
+      "preferred_primary_source": "Google AI Studio / Vertex AI の機能別開発ガイド（Developer Guides）および API リファレンス"
+    }
+  ]
+}
