@@ -1,29 +1,29 @@
 {
   "research_questions": [
     {
-      "question": "Python 3.14で導入される新機能や構文上の追加・変更仕様にはどのようなものがあるか？",
-      "why": "新機能の利点やコードの記述方法の変化を正確に把握し、採用を検討する際の判断材料とするため。",
-      "preferred_primary_source": "Python公式ドキュメント「What's New In Python 3.14」および各機能を定義するPEP文書"
+      "question": "Python 3.14の公式ドキュメント「What's New in Python 3.14」において、新機能や新文法として明記されている主要な変更は何か",
+      "why": "最新バージョンの新機能を把握し、コードの記述効率化や新しいパラダイムの導入可否を評価するため",
+      "preferred_primary_source": "Python Software Foundation Official Documentation (What's New in Python 3.14)"
     },
     {
-      "question": "Python 3.14で非推奨（Deprecated）に指定された仕様や、完全に削除されたAPI・モジュールは何か？",
-      "why": "既存のコードベースに対する非互換な変更点を特定し、バージョンアップ時の破壊的変更による影響を予防するため。",
-      "preferred_primary_source": "Python公式ドキュメント「What's New In Python 3.14」のDeprecated/Removedセクション"
+      "question": "Python 3.14で非推奨（Deprecated）に指定された、または完全に削除された機能・標準ライブラリは何か",
+      "why": "既存コードベースとの互換性リスクや、移行時に発生するリファクタリングの影響範囲を特定するため",
+      "preferred_primary_source": "Python Software Foundation Official Documentation (What's New in Python 3.14 - Deprecated / Removed)"
     },
     {
-      "question": "標準ライブラリにおいて追加・変更・機能拡張されたモジュールは何か？",
-      "why": "サードパーティ製ライブラリへの依存を減らせる可能性や、既存処理の挙動変更による影響を確認するため。",
-      "preferred_primary_source": "Python公式ドキュメント「What's New In Python 3.14」のImproved Modulesセクション"
+      "question": "Python 3.14に採択・実装されたPEP（Python Enhancement Proposals）にはどのようなものが含まれるか",
+      "why": "仕様変更の背景、設計思想、および具体的な実装詳細を正確に理解するため",
+      "preferred_primary_source": "Python PEPs Repository (peps.python.org)"
     },
     {
-      "question": "C APIや内部実装（Free-threadingやJIT等）における変更点とパフォーマンスへの影響は何か？",
-      "why": "C拡張モジュールとの互換性や、マルチスレッド処理・実行速度に依存するシステムへの影響を評価するため。",
-      "preferred_primary_source": "Python公式ドキュメント「What's New In Python 3.14 - C API Changes」および該当するPEP文書"
+      "question": "CPythonインタプリタの内部実装、パフォーマンス改善（JITやフリースレディング等）、C APIの変更点は何か",
+      "why": "実行速度やリソース消費への影響、およびC拡張モジュール等の互換性を確認するため",
+      "preferred_primary_source": "Python Software Foundation Official Documentation (What's New in Python 3.14 - Optimizations / C API Changes)"
     },
     {
-      "question": "Python 3.14の現在の開発フェーズおよび正式リリースのタイムラインはどうなっているか？",
-      "why": "開発環境や本番環境でのテスト・移行計画をいつ実施すべきかのスケジュールを立案するため。",
-      "preferred_primary_source": "PEP 745（Python 3.14 Release Schedule）または Python Developer's Guide"
+      "question": "Python 3.14の現在の開発ステータスおよび正式リリースに向けたスケジュールはどうなっているか",
+      "why": "仕様の確定度合い（アルファ、ベータ、RCなど）を把握し、検証や移行の適切なタイミングを判断するため",
+      "preferred_primary_source": "PEP 745 (Python 3.14 Release Schedule)"
     }
   ]
 }

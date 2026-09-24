@@ -1,0 +1,92 @@
+{
+  "topic": "Python 3.14で追加・変更された主要仕様を公式情報から調査したい",
+  "verification_policy": {
+    "statuses": [
+      "UNVERIFIED",
+      "MATCH",
+      "MISMATCH",
+      "UNCERTAIN"
+    ],
+    "primary_source_required": true,
+    "final_judgment_by_human": true
+  },
+  "verifications": [
+    {
+      "question": "Python 3.14の公式情報において、言語仕様の新機能や文法の追加・変更として明記されている主要な内容は何か",
+      "original_question": "Python 3.14の公式ドキュメント「What's New in Python 3.14」において、新機能や新文法として明記されている主要な変更は何か",
+      "review_decision": "MODIFY",
+      "verification_target": "Python公式には「What's New in Python 3.14」という一次情報が存在する",
+      "primary_source": "https://docs.python.org/3/whatsnew/3.14.html",
+      "evidence": "Python公式ドキュメントに「What's New in Python 3.14」が存在し、新機能、標準ライブラリ、最適化、削除・非推奨、C API変更などの情報が整理されている。",
+      "status": "MATCH",
+      "human_review_required": false,
+      "human_note": "AIが調査候補として挙げた公式資料について、一次情報の存在を確認した。セルフレビューでは未確認の資料名を前提としていた点をMODIFYとしたが、照合結果として資料自体は実在した。"
+    },
+    {
+      "question": "Python 3.14において非推奨（Deprecated）に指定された、または完全に削除された機能・標準ライブラリは何か",
+      "original_question": "Python 3.14で非推奨（Deprecated）に指定された、または完全に削除された機能・標準ライブラリは何か",
+      "review_decision": "MODIFY",
+      "verification_target": "Python 3.14では非推奨または削除された機能・APIが公式に整理されている",
+      "primary_source": "https://docs.python.org/3/whatsnew/3.14.html",
+      "evidence": "Python公式のWhat's NewにDeprecatedおよびRemovedの項目があり、Python 3.14で非推奨化または削除された機能・APIが整理されている。",
+      "status": "MATCH",
+      "human_review_required": false,
+      "human_note": "調査計画で設定したDeprecated / Removedの観点について、Python公式一次情報で確認できた。"
+    },
+    {
+      "question": "Python 3.14に採択・実装された主要なPEP（Python Enhancement Proposals）にはどのようなものがあるか",
+      "original_question": "Python 3.14に採択・実装されたPEP（Python Enhancement Proposals）にはどのようなものが含まれるか",
+      "review_decision": "MODIFY",
+      "verification_target": "Python 3.14に関連する主要PEPが公式情報に明記されている",
+      "primary_source": "https://docs.python.org/3/whatsnew/3.14.html",
+      "evidence": "Python公式のWhat's Newでは、Python 3.14に関連する複数のPEPが主要変更として参照されており、仕様変更の背景や実装内容をPEP文書から追跡できる。",
+      "status": "MATCH",
+      "human_review_required": false,
+      "human_note": "Python 3.14の主要PEPを調査する観点について、公式ドキュメントおよびPEP文書へたどれることを確認した。"
+    },
+    {
+      "question": "Python 3.14におけるCPythonインタプリタの主要なパフォーマンス改善点およびC APIの変更点は何か",
+      "original_question": "CPythonインタプリタの内部実装、パフォーマンス改善（JITやフリースレディング等）、C APIの変更点は何か",
+      "review_decision": "MODIFY",
+      "verification_target": "Python 3.14にはJITおよびfree-threadingに関する変更が存在する",
+      "primary_source": "https://docs.python.org/3/whatsnew/3.14.html",
+      "evidence": "Python公式のWhat's Newでfree-threaded modeの改善および実験的JITに関する記述が確認できる。また、C APIの変更点も公式ドキュメント内で整理されている。",
+      "status": "MATCH",
+      "human_review_required": false,
+      "human_note": "セルフレビューではJITやfree-threadingを調査前に前提としていた点を問題視した。一次情報との照合では、これらに関する変更自体は確認できた。"
+    },
+    {
+      "question": "Python 3.14の現在の開発ステータス（アルファ/ベータ/RC等）および正式リリースに向けたスケジュールはどのように定義されているか",
+      "original_question": "Python 3.14の現在の開発ステータスおよび正式リリースに向けたスケジュールはどうなっているか",
+      "review_decision": "MODIFY",
+      "verification_target": "PEP 745はPython 3.14のRelease Scheduleである",
+      "primary_source": "https://peps.python.org/pep-0745/",
+      "evidence": "PEP 745のタイトルは「Python 3.14 Release Schedule」であり、Python-Versionは3.14として定義されている。",
+      "status": "MATCH",
+      "human_review_required": false,
+      "human_note": "AIは調査前の段階でPEP 745という具体的な番号を提示していた。セルフレビューでは未確認情報としてMODIFYしたが、一次情報照合の結果、この具体名は正しかった。"
+    },
+    {
+      "question": "Python 3.14における標準ライブラリの新規追加・仕様変更・モジュール改修にはどのようなものがあるか",
+      "original_question": "",
+      "review_decision": "ADDED",
+      "verification_target": "Python 3.14では標準ライブラリに新規追加・主要変更が存在する",
+      "primary_source": "https://docs.python.org/3/whatsnew/3.14.html",
+      "evidence": "Python公式のWhat's Newに、新規追加された標準ライブラリや既存モジュールの改善・変更点が整理されている。",
+      "status": "MATCH",
+      "human_review_required": false,
+      "human_note": "セルフレビューによって追加された標準ライブラリ変更の観点について、Python公式一次情報で確認できた。"
+    },
+    {
+      "question": "Python 3.14の動作・ビルドに必要なサポート対象環境（OS、コンパイラ、C言語標準等）にどのような変更があるか",
+      "original_question": "",
+      "review_decision": "ADDED",
+      "verification_target": "Python 3.14ではビルド要件やサポート対象環境に変更が存在する",
+      "primary_source": "https://docs.python.org/3/whatsnew/3.14.html",
+      "evidence": "Python公式のWhat's NewにBuild Changesがあり、ビルド要件やサポート環境に関する変更事項が整理されている。",
+      "status": "MATCH",
+      "human_review_required": false,
+      "human_note": "セルフレビューによって追加されたビルド・サポート環境の観点について、Python公式一次情報で確認できた。"
+    }
+  ]
+}
